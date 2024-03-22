@@ -42,7 +42,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import gun0912.tedbottompicker.TedBottomPicker;
+//import gun0912.tedbottompicker.TedBottomPicker;
 import me.ccrama.redditslide.Activities.Draw;
 import me.ccrama.redditslide.Drafts;
 import me.ccrama.redditslide.ImgurAlbum.UploadImgur;
@@ -227,18 +227,18 @@ public class DoEditorActions {
                 sStart = editText.getSelectionStart();
                 sEnd = editText.getSelectionEnd();
 
-                TedBottomPicker tedBottomPicker = new TedBottomPicker.Builder(editText.getContext())
-                        .setOnImageSelectedListener(new TedBottomPicker.OnImageSelectedListener() {
-                            @Override
-                            public void onImageSelected(List<Uri> uri) {
-                                handleImageIntent(uri, editText, a);
-                            }
-                        })
-                        .setLayoutResource(R.layout.image_sheet_dialog)
-                        .setTitle("Choose a photo")
-                        .create();
+//                TedBottomPicker tedBottomPicker = new TedBottomPicker.Builder(editText.getContext())
+//                        .setOnImageSelectedListener(new TedBottomPicker.OnImageSelectedListener() {
+//                            @Override
+//                            public void onImageSelected(List<Uri> uri) {
+//                                handleImageIntent(uri, editText, a);
+//                            }
+//                        })
+//                        .setLayoutResource(R.layout.image_sheet_dialog)
+//                        .setTitle("Choose a photo")
+//                        .create();
 
-                tedBottomPicker.show(fm);
+//                tedBottomPicker.show(fm);
                 KeyboardUtil.hideKeyboard(editText.getContext(), editText.getWindowToken(), 0);
             }
         });
@@ -474,28 +474,28 @@ public class DoEditorActions {
         final Intent intent = new Intent(a, Draw.class);
         KeyboardUtil.hideKeyboard(editText.getContext(), editText.getWindowToken(), 0);
         e = editText.getText();
-        TedBottomPicker tedBottomPicker =
-                new TedBottomPicker.Builder(editText.getContext()).setOnImageSelectedListener(
-                        new TedBottomPicker.OnImageSelectedListener() {
-                            @Override
-                            public void onImageSelected(List<Uri> uri) {
-                                Draw.uri = uri.get(0);
-                                Fragment auxiliary = new AuxiliaryFragment();
-
-                                sStart = editText.getSelectionStart();
-                                sEnd = editText.getSelectionEnd();
-
-                                fm.beginTransaction().add(auxiliary, "IMAGE_UPLOAD").commit();
-                                fm.executePendingTransactions();
-
-                                auxiliary.startActivityForResult(intent, 3333);
-                            }
-                        })
-                        .setLayoutResource(R.layout.image_sheet_dialog)
-                        .setTitle("Choose a photo")
-                        .create();
-
-        tedBottomPicker.show(fm);
+//        TedBottomPicker tedBottomPicker =
+//                new TedBottomPicker.Builder(editText.getContext()).setOnImageSelectedListener(
+//                        new TedBottomPicker.OnImageSelectedListener() {
+//                            @Override
+//                            public void onImageSelected(List<Uri> uri) {
+//                                Draw.uri = uri.get(0);
+//                                Fragment auxiliary = new AuxiliaryFragment();
+//
+//                                sStart = editText.getSelectionStart();
+//                                sEnd = editText.getSelectionEnd();
+//
+//                                fm.beginTransaction().add(auxiliary, "IMAGE_UPLOAD").commit();
+//                                fm.executePendingTransactions();
+//
+//                                auxiliary.startActivityForResult(intent, 3333);
+//                            }
+//                        })
+//                        .setLayoutResource(R.layout.image_sheet_dialog)
+//                        .setTitle("Choose a photo")
+//                        .create();
+//
+//        tedBottomPicker.show(fm);
     }
 
     public static class AuxiliaryFragment extends Fragment {

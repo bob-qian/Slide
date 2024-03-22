@@ -44,7 +44,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import gun0912.tedbottompicker.TedBottomPicker;
+//import gun0912.tedbottompicker.TedBottomPicker;
 import me.ccrama.redditslide.Authentication;
 import me.ccrama.redditslide.Drafts;
 import me.ccrama.redditslide.Flair.RichFlair;
@@ -280,14 +280,14 @@ public class Submit extends BaseActivity {
         findViewById(R.id.selImage).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TedBottomPicker tedBottomPicker =
-                        new TedBottomPicker.Builder(Submit.this).setOnImageSelectedListener(
-                                Submit.this::handleImageIntent)
-                                .setLayoutResource(R.layout.image_sheet_dialog)
-                                .setTitle("Choose a photo")
-                                .create();
+//                TedBottomPicker tedBottomPicker =
+//                        new TedBottomPicker.Builder(Submit.this).setOnImageSelectedListener(
+//                                Submit.this::handleImageIntent)
+//                                .setLayoutResource(R.layout.image_sheet_dialog)
+//                                .setTitle("Choose a photo")
+//                                .create();
 
-                tedBottomPicker.show(getSupportFragmentManager());
+//                tedBottomPicker.show(getSupportFragmentManager());
                 KeyboardUtil.hideKeyboard(Submit.this, findViewById(R.id.bodytext).getWindowToken(), 0);
             }
         });

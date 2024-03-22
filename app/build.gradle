@@ -80,7 +80,7 @@ dependencies {
 
 /** Custom **/
     implementation 'com.github.Haptic-Apps:JRAW:9c8a410a06'
-    implementation 'com.github.Haptic-Apps:TedBottomPicker:496623c9b6'
+//    implementation 'com.github.Haptic-Apps:TedBottomPicker:496623c9b6'
     def commonmarkVersion = '0ebc0749c7'
     implementation "com.github.Haptic-Apps.commonmark-java:commonmark:$commonmarkVersion"
     implementation "com.github.Haptic-Apps.commonmark-java:commonmark-ext-gfm-strikethrough:$commonmarkVersion"
@@ -152,7 +152,7 @@ dependencies {
     implementation 'com.sothree.slidinguppanel:library:3.4.0'
 
     // ViewAnimationUtils.createCircularReveal for pre-Lollipop APIs
-    implementation 'com.github.ozodrukh.CircularReveal:circualreveal:2.1.0'
+    implementation 'com.github.ozodrukh.circularreveal:circualreveal:2.1.0'
 
     // RecyclerView animations
     implementation 'com.mikepenz:itemanimators:1.1.0@aar'
