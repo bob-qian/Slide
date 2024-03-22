@@ -1,3 +1,7 @@
+## Notes
+
+I found this helpful to build the project: https://www.reddit.com/r/slideforreddit/comments/14nm1ko/how_to_rebuild_slide_for_android_with_your_own/
+---
 ## Current project status
 
 This project will be on indefinite hiatus for the foreseeable future, and may not be maintained.
